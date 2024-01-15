@@ -124,3 +124,16 @@ class Solution:
 sol=Solution()
 res=sol.reverseBits(0o00000010100101000001111010011100)
 print(res)
+
+Time complexity - O(1)
+
+class Solution:
+    # @param n, an integer
+    # @return an integer
+    def reverseBits(self, n):
+        binary_str=bin(n)[2:].zfill(32)
+        rev_str=binary_str[::-1]
+        int_rev=int(rev_str,2)
+        return int_rev
+
+Time complexity - O(1)
